@@ -55,3 +55,43 @@ localStorage.removeItem("key");
 
   등등~~
   ``` 
+
+___
+## 2 day - 24.03.18
+
+- padStart(n,"x") 함수를 배움   
+  => string이 가져야 할 길이가 n 인데 그렇지 않다면 앞쪽에 "x"를 n 길이가 되는 만큼 붙이는 함수 
+
+- js에 있는 Math모듈에서 여러가지 함수를 배움
+
+```
+// 랜덤으로 0~1사이 수를 제공함
+Math.random();
+
+// 소수점 밑에 수가 있다면 버림
+Math.floor();
+
+// 소수점 밑에 수가 있다면 올림
+Math.ceil();
+
+// 소수점 밑에 수를 반올림해줌
+Math.round();
+
+
+//사용한 기능 - 말씀을 랜덤으로 띄우기
+bibleVerse[Math.floor(Math.random()*bibleVerse.length)];
+```
+
+- js에서 HTML(img태그)를 생성하고 값(src)를 넣어주는 방법을 배움   
+
+```
+// bgImge에 img태그를 생성
+const bgImge = document.createElement("img");
+
+// 이미지 위치 (src)를 넣어주기
+bgImage.src = `img/~~~~~.jpg`;
+
+// HTML에 태그를 생성하기
+document.body.appendChild(bgImage);
+
+```
